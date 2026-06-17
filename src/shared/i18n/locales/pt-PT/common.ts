@@ -1,5 +1,5 @@
 export default {
-  appName: "Hermes One",
+  appName: "ZeroMotion One",
   continue: "Continuar",
   cancel: "Cancelar",
   retry: "Tentar novamente",

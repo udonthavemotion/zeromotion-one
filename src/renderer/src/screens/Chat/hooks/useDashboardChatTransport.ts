@@ -552,7 +552,7 @@ export function dashboardModelMatches(
   if (liveProvider === provider) return true;
 
   // Named custom providers can be reported by Hermes Agent as custom:<slug>
-  // while Hermes One's older model config still treats them as custom rows.
+  // while ZeroMotion One's older model config still treats them as custom rows.
   return provider === "custom" && liveProvider.startsWith("custom:");
 }
 
