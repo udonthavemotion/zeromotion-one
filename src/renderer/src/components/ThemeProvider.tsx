@@ -22,7 +22,7 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue>({
   theme: "system",
-  resolved: DEFAULT_DARK_THEME,
+  resolved: DEFAULT_LIGHT_THEME,
   setTheme: () => {},
   rounded: true,
   setRounded: () => {},
