@@ -1263,6 +1263,26 @@ body {
   border-radius: 16px;
 }
 
+/* CRM aesthetic: in light mode the content stays light while the nav rail
+   becomes a charcoal column (matching the ZeroMotion CRM). Rather than
+   restyle each child, we redefine the tokens its descendants already read,
+   so nav items, hovers, active states and the logo all flip to light-on-dark
+   automatically. Scoped to .sidebar — never leaks into the content area. */
+[data-theme="light"] .sidebar {
+  --bg-secondary: #18181b;
+  --bg-tertiary: #27272a;
+  --bg-hover: #27272a;
+  --bg-active: #303034;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-bright: rgba(255, 255, 255, 0.12);
+  --accent-subtle: rgba(124, 58, 237, 0.25);
+  --accent-text: #c4b5fd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .sidebar-collapsed .sidebar {
   width: 64px;
 }
@@ -1277,14 +1297,17 @@ body {
 }
 
 .sidebar-logo {
-  height: 30px;
-  width: 150px;
-  background-color: var(--primary-yellow);
+  height: 38px;
+  width: 172px;
+  /* The ZeroMotion tribal mark is supplied as a black-on-transparent PNG and
+     painted via mask, so it inherits a theme-aware fill: light on the dark
+     CRM rail, dark on any light surface. */
+  background-color: var(--text-primary);
   mask-repeat: no-repeat;
-  mask-position: center;
+  mask-position: left center;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  -webkit-mask-position: left center;
   -webkit-mask-size: contain;
 }
 

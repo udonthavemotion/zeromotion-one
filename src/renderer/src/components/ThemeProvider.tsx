@@ -49,7 +49,8 @@ export function ThemeProvider({
   const [theme, setThemeState] = useState<Theme>(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "system" || (stored && THEME_IDS.has(stored))) return stored;
-    return DEFAULT_DARK_THEME;
+    // First run defaults to the light, CRM-style aesthetic.
+    return DEFAULT_LIGHT_THEME;
   });
   const [resolved, setResolved] = useState<string>(() => resolve(theme));
   const [rounded, setRoundedState] = useState<boolean>(

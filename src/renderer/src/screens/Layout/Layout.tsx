@@ -29,7 +29,7 @@ import Schedules from "../Schedules/Schedules";
 import Kanban from "../Kanban/Kanban";
 import RemoteNotice from "../../components/RemoteNotice";
 import VerifyWarningBanner from "../../components/VerifyWarningBanner";
-import zeromotionlogo from "../../assets/zeromotion-one.svg";
+import zeromotionlogo from "../../assets/zeromotion-mark.png";
 import {
   ChatBubble,
   Clock,
