@@ -1,10 +1,10 @@
 {
-  "name": "hermes-desktop",
+  "name": "zeromotion-one",
   "version": "0.6.0",
-  "description": "Hermes Agent Desktop — self-improving AI assistant",
+  "description": "ZeroMotion One — AI operating desktop for ZeroMotion Marketing",
   "main": "./out/main/index.js",
-  "author": "fathah",
-  "homepage": "https://github.com/fathah/hermes-desktop",
+  "author": "ZeroMotion Marketing LLC",
+  "homepage": "https://zeromotionmarketing.com",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint --cache .",
