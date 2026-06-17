@@ -351,7 +351,7 @@ process.on("unhandledRejection", (reason) => {
   console.error("[MAIN UNHANDLED REJECTION]", reason);
 });
 
-const APP_NAME = process.env.HERMES_DESKTOP_APP_NAME?.trim() || "Hermes One";
+const APP_NAME = process.env.HERMES_DESKTOP_APP_NAME?.trim() || "ZeroMotion One";
 
 let mainWindow: BrowserWindow | null = null;
 // Per-run abort handles, keyed by the renderer-minted runId. Multiple chats

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import startVid from "../../assets/startvid.mp4";
-import splashLogo from "../../assets/hermes-one.svg";
+import splashLogo from "../../assets/zeromotion-one.svg";
 
 interface SplashScreenProps {
   onFinished: () => void;

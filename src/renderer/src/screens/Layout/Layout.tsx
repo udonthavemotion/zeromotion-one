@@ -29,7 +29,7 @@ import Schedules from "../Schedules/Schedules";
 import Kanban from "../Kanban/Kanban";
 import RemoteNotice from "../../components/RemoteNotice";
 import VerifyWarningBanner from "../../components/VerifyWarningBanner";
-import hermeslogo from "../../assets/hermes-one.svg";
+import zeromotionlogo from "../../assets/zeromotion-one.svg";
 import {
   ChatBubble,
   Clock,
@@ -483,10 +483,10 @@ function Layout({
           <span
             className="sidebar-logo"
             role="img"
-            aria-label="Hermes"
+            aria-label="ZeroMotion One"
             style={{
-              maskImage: `url(${hermeslogo})`,
-              WebkitMaskImage: `url(${hermeslogo})`,
+              maskImage: `url(${zeromotionlogo})`,
+              WebkitMaskImage: `url(${zeromotionlogo})`,
             }}
           />
           <button
