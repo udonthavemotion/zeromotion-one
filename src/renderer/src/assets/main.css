@@ -1264,23 +1264,25 @@ body {
 }
 
 /* CRM aesthetic: in light mode the content stays light while the nav rail
-   becomes a charcoal column (matching the ZeroMotion CRM). Rather than
-   restyle each child, we redefine the tokens its descendants already read,
-   so nav items, hovers, active states and the logo all flip to light-on-dark
+   becomes a branded ZeroMotion purple column. Rather than restyle each child,
+   we redefine the tokens its descendants already read, so nav items, hovers,
+   active states, the avatar tile and the logo all flip to white-on-purple
    automatically. Scoped to .sidebar — never leaks into the content area. */
 [data-theme="light"] .sidebar {
-  --bg-secondary: #18181b;
-  --bg-tertiary: #27272a;
-  --bg-hover: #27272a;
-  --bg-active: #303034;
-  --text-primary: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-  --border: rgba(255, 255, 255, 0.07);
-  --border-bright: rgba(255, 255, 255, 0.12);
-  --accent-subtle: rgba(124, 58, 237, 0.25);
-  --accent-text: #c4b5fd;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --bg-secondary: #5b21b6;
+  --bg-tertiary: rgba(255, 255, 255, 0.12);
+  --bg-hover: rgba(255, 255, 255, 0.12);
+  --bg-active: rgba(255, 255, 255, 0.18);
+  --bg-elevated: rgba(255, 255, 255, 0.16);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.74);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --border: rgba(255, 255, 255, 0.14);
+  --border-bright: rgba(255, 255, 255, 0.24);
+  --accent-subtle: rgba(255, 255, 255, 0.18);
+  --accent-text: #ffffff;
+  background: linear-gradient(180deg, #7c3aed 0%, #5b21b6 55%, #4c1d95 100%);
+  box-shadow: 0 1px 3px rgba(76, 29, 149, 0.35);
 }
 
 .sidebar-collapsed .sidebar {
