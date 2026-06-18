@@ -259,7 +259,7 @@ jobs:
       - name: Generate winget manifests
         env:
           VERSION: ${{ needs.prepare.outputs.version }}
-          PUBLISH_OWNER: fathah
+          PUBLISH_OWNER: udonthavemotion
         run: node scripts/generate-winget-manifests.mjs
 
       - name: Upload winget manifests artifact
@@ -306,7 +306,7 @@ jobs:
             .readdirSync(artifactsDir)
             .filter(
               (name) =>
-                name.startsWith(`hermes-desktop-${version}-`) &&
+                name.startsWith(`zeromotion-one-${version}-`) &&
                 name.endsWith("-mac.zip"),
             )
             .sort((a, b) => {
